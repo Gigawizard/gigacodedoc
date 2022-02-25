@@ -36,8 +36,8 @@ div (27,3)
 
 | Key Word | Meaning                            |
 | -------- | ---------------------------------- |
-| UwU      | Concatenation operator             |
-|          | log 'hello 'UwU'world'             |
+| _        | Concatenation operator             |
+|          | log 'hello '_'world'               |
 | add      | Arithmetic Operator                |
 |          | `add (1,1)` returns `2`            |
 | sub      | Arithmetic Operator                |
@@ -59,9 +59,9 @@ The user-defined meaning for symbols and their operations in a programming langu
 
 Gigacode:
 
-`let message = 'Hello 'UwU'World'`
+`let message = 'Hello '_'World'`
 
-the overload operator **for STINGS ONNLY** is the UwU.
+the overload operator **for STINGS ONNLY** is the _.
 
 What about the `+`,`-`,`/`,`*` symbols? Right now, they would just cause errors, because they haven't been assigned to a role to play in Gigacode.
 
@@ -73,7 +73,7 @@ Gigacode:
 
 ## Future development
 
-* log 'hello 'UwU'world
+* log 'hello '_'world
 * arithmetic operator overloading
 * regular expressions for parsing the log function and separating str form ints  
 * build a REPL (read, evaluate, print, loop) environment
