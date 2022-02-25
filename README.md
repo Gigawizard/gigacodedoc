@@ -4,7 +4,7 @@
 
 Gigacode is a programming language in development created by GigaWizard.
 
-##### syntax
+##### Syntax
 
 ```
 log 'hello world'
@@ -32,7 +32,7 @@ div (27,3)
 
 
 
-### reserved keywords
+### Reserved keywords
 
 | Key Word | Meaning                            |
 | -------- | ---------------------------------- |
@@ -53,7 +53,7 @@ div (27,3)
 | random   | Picks random float between 0 and 1 |
 |          | `random`returns nothing            |
 
-## operator overloading
+## Operator overloading
 
 The user-defined meaning for symbols and their operations in a programming language. For example, I can make the `+` symbol take two inputs and return their sum ex: `2+2` returns `4`
 
