@@ -4,17 +4,18 @@ function parse(script) {
     let var1 = ''
     let var2 = ''
     let varstorage = new Map();
-    
+
     switch (method) {
         case "log":
-            output = script.split(" ")[1]
-            if (/'/.test(script)){
+            output = script.split(" ")
+            console.log(output)
+            if (output.includes("'")) {
+                console.log('i think that this is a string')
                 output = script.split("'")[1];
                 console.log(`\n\n>>> ${output}`)
-            }else{
-                if(varstorage.has(output)){
-                    console.log(varstorage.get(output))
-                }
+            } else {
+                console.log(output[1])
+                console.log(varstorage.has('yes'))
             }
             break;
         case "add":
@@ -56,12 +57,17 @@ function parse(script) {
             var1 = script.split(" ")[1]
             var2 = script.split(" ")[3]
             varstorage.set(var1, var2)
+            console.log(varstorage.get(var1))
+            console.log(var1)
             break;
         default:
             console.log(`Undefined egg method ${method}`)
     }
 }
 
-prompt = require('prompt-sync')();
-let script = prompt('> ');
-parse(script)
+//prompt = require('prompt-sync')();
+//let script = prompt('> ');
+parse('let yes = \'no\'')
+
+//script = prompt('> ');
+parse('log yes')
