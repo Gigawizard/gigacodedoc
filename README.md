@@ -75,7 +75,7 @@ Gigacode:
 
 * log 'hello '_'world
 * arithmetic operator overloading
-* regular expressions for parsing the log function and separating str form ints  
+* regular expressions for parsing the log function and separating strings form integers 
 * build a REPL (read, evaluate, print, loop) environment
 * functions use`function greet _name,_age`
 
@@ -83,6 +83,6 @@ Gigacode:
 
 | word            | definition                                                   |
 | --------------- | ------------------------------------------------------------ |
-| token           | One element to a string of characters, e.g "Grey" has 4 tokens: "G","r","e","y" |
+| token           | One element to a string of characters, e.g  "Grey" has 4 tokens: "G","r","e","y" |
 | Carriage return | The "return" or "enter" key as interpreted by the parser     |
 
