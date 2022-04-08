@@ -4,7 +4,10 @@ class Variable {
     	this.type = typeof(value);
     }
     info() {
-        console.log(`"${this.value}" is a ${this.type}`)
+        let stringoutput = `"${this.value}" is a ${this.type}`
+        let numberoutput = `${this.value} is a ${this.type}`
+        let outPhrase = (this.type === 'string' ? stringoutput : numberoutput)
+        console.log(outPhrase)
     }
     add(n) {
         if (this.type === "number" && typeof(n) === "number") {
@@ -32,7 +35,6 @@ class Variable {
             throw new Error('cannot multiply strings')
         }
     }
-    
     div(n){
         if (this.type === "number" && typeof(n) === "number") {
             return this.value / n
@@ -41,6 +43,3 @@ class Variable {
         }
     }
 }
-
-let age = new Variable(100)
-console.log(age.mult(10))
