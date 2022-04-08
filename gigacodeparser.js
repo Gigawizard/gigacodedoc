@@ -65,9 +65,6 @@ function parse(script) {
     }
 }
 
-//prompt = require('prompt-sync')();
-//let script = prompt('> ');
 parse('let yes = \'no\'')
 
-//script = prompt('> ');
 parse('log yes')
