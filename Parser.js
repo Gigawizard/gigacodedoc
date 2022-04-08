@@ -23,12 +23,16 @@ class Parser {
         if(c[0] == 'log'){
             c.shift();
             if (c[0].includes("'")){
-                console.log(c.join(" "))
+                this.output(c.join(" "))
             }
         }else{
             console.log("Undefined reference : " + c[0])
         }
     }
+    output(parsedScript){
+        console.log(`\n\n>>> ${parsedScript}`)
+    }
+    
 }
 
 let script = `
